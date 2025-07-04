@@ -1,0 +1,68 @@
+Problem statement
+
+Dataset Preparation
+
+Classification Model - 
+
+Grad-cam model
+
+streamlit app
+
+✅ Preprocessed the dataset
+✅ Trained the model
+✅ Downloaded the files:
+
+* `dermaiq_trained_model.h5`
+* `burn_model_history.pkl`
+* `confusion_matrix.npy`
+
+
+1. Evaluate the Model
+Use your saved files to generate visual results that prove your model’s performance.
+
+📊 Plot Accuracy & Loss
+
+From `burn_model_history.pkl`:
+
+* Helps show how well the model learned over time.
+* Useful for reports and presentations.
+
+📉 Plot Confusion Matrix
+
+From `confusion_matrix.npy`:
+
+* Shows how well the model predicts each burn class.
+* Reveals misclassifications (important for medical context).
+
+Why it matters : It validates that your model is reliable before deployment.
+
+
+2. Add Explainability (Grad-CAM)
+Use Grad-CAM to show **what parts of the image the model used** to make a prediction.
+
+Why it matters:In healthcare, transparency builds trust. This helps doctors understand why your AI said "second-degree burn."
+
+
+3. Create a User Interface (Streamlit App)
+
+
+
+
+# DermaIQ: Burn Severity Classifier 🔥
+
+An AI-based skin burn classification tool using MobileNetV2, Grad-CAM, and Streamlit UI.
+
+## 📁 Structure
+
+- `dermaiq_model_training.ipynb` – model training
+- `dermaiq_evaluation.py` – accuracy/loss/confusion matrix
+- `dermaiq_gradcam.py` – Grad-CAM visualization
+- `app.py` – interactive web app
+
+## 🖼 Sample Prediction
+
+Upload an image like this:
+
+![sample](test_images/sample_burn.jpg)
+
+See Grad-CAM + predicted severity on screen.
