@@ -1,5 +1,5 @@
 streamlit
-tensorflow
+tensorflow==2.13.0  # or another version compatible with 3.10
 numpy
 pandas
 opencv-python
